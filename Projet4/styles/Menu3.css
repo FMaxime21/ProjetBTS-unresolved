@@ -1,0 +1,290 @@
+td{Width: 100 px; height: 30 px; border: 10px;}
+table { border-width: 8px;
+    border-style: solid;
+    margin: 0 auto;
+    text-align:center;
+}
+.Vert { color: green;}
+.Blanc{ color: white;}
+#Valid{ color: blue; text-align: center;} 
+.Bleu{ color:blue;}
+.Noir{ color: black;}
+.Rouge{ color: red;}
+.Vert{ color: green;}
+.Violet{ color: violet;}
+.Gris{ color:grey;}
+.Marron{ color: brown;}
+.Azur{ color: cyan;}
+.background{position: fixed;}
+.Tit{text-align:center;
+     font-weight: bold; 
+     text-decoration:underline;}
+p{ 
+		font-size:30px;
+		}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type:none;
+    background-color:#19191b; /*le fond du menu*/
+}
+nav li{
+    display:inline-block;
+    width:200px;
+    height:40px;
+    margin:0px;
+    padding:0px;
+    border-right:5px solid#CCCCCC; 
+    text-align:center;
+    line-height:40px;
+}
+nav li :hover{
+    background-color:#16f1cc;
+}
+nav li a{
+    display:block;
+    text-decoration:none;
+    color:#cce9c9;
+}
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+    background: #900 ;
+    text-decoration: underline ;
+  }
+body {
+    /*color:black;
+    background-color:rgb(73, 75, 77);*/
+    background-attachment:fixed;
+    }
+video{
+  text-align: center;
+}    
+.Yugiback{    
+background-image:url("../Fonds/Yugi-back.jpg");
+}
+.Yugikaiba{
+background-image:url("../Fonds/Yugi-kaiba.jpg");
+}
+.Duellinks{
+background-image:url("../Fonds/Duel-links.jpg");
+}
+.Fondgris{
+background-image:url("../Fonds/Gris.jpg");
+}
+.Jadenyubel{
+background-image:url("../Fonds/Jaden-yubel.jpg");
+}
+.Heros{
+background-image:url("../Fonds/Héros.jpg");
+}
+.Yugiatem{
+background-image:url("../Fonds/Yugi-atem.jpg");
+}
+.King{
+background-image:url("../Fonds/King.jpg");  
+}
+.Joeykaiba{
+background-image:url("../Fonds/Joeykaiba.jpg");  
+}
+.Noir2{
+background-image:url("../Fonds/Noir.jpg");
+}
+.Transp{
+  background-color:rgb(177, 218, 241);
+}
+.Aligner{ text-align : right;
+  color: white;
+}
+.flotte{
+  color: rgb(0, 0, 0);
+  float: left;
+  text-align: center;
+  margin-left:294px;
+}
+.flot{
+  color: rgb(0, 0, 0);
+  float: right;
+  text-align: center;
+  margin-right:294px;
+  /*margin:10px;*/
+}
+.flo{
+  float: center;
+}
+.vignettes 
+{ 
+	text-align:center; 
+} 
+
+/*****carrousel 3d automatique*****/
+.caroussel_diapo{padding:2.5rem;position:relative}
+.caroussel_diapo input{opacity:0}
+.caroussel_diapo input[type="checkbox"] + label{
+cursor:pointer;
+width:180px;
+background:hsl(203,77%,61%);
+position:absolute;
+left:50%;
+bottom:0;
+text-align:center;
+-webkit-transform:translatex(-50%);
+transform:translatex(-50%);
+display:inline-block;
+line-height:35px;
+color:white}
+
+.caroussel_diapo input[type="checkbox"]:checked + label:after{
+background:hsl(203,77%,61%);
+width:180px;
+display:inline-block;
+position:absolute;
+left:50%;
+-webkit-transform:translatex(-50%);
+transform:translatex(-50%);
+content:'Stopper diaporama'}
+
+.caroussel_diapo input[type="checkbox"]:checked ~ .contenu_carou .caroussel{
+animation:rotation 24s infinite alternate linear;
+-webkit-animation:rotation 24s infinite alternate linear}
+
+.contenu_carou{
+width:420px;
+height:279px;
+position:relative;
+margin:40px auto 40px auto;
+-webkit-perspective:8000px;
+perspective:8000px}
+
+
+.caroussel{
+-webkit-transform-style:preserve-3d;
+transform-style:preserve-3d;
+width:100%;
+transition:1s;
+position:absolute;
+height:100%}
+
+.caroussel img{
+filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+position:absolute;
+width:400px;
+height:266px;
+top:0;
+left:10px;
+display:block;
+outline:1px solid transparent;
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden}
+
+
+.caroussel img:nth-child(1){-webkit-transform:translate3d(0,0,495px);transform:translate3d(0,0,495px)}
+.caroussel img:nth-child(2){-webkit-transform:rotateY(45deg) translateZ(495px);transform:rotateY(45deg) translateZ(495px)}
+.caroussel img:nth-child(3){-webkit-transform:rotateY(90deg) translateZ(495px);transform:rotateY(90deg) translateZ(495px)}
+.caroussel img:nth-child(4){-webkit-transform:rotateY(135deg) translateZ(495px);transform:rotateY(135deg) translateZ(495px)}
+.caroussel img:nth-child(5){-webkit-transform:rotateY(180deg) translateZ(495px);transform:rotateY(180deg) translateZ(495px)}
+.caroussel img:nth-child(6){-webkit-transform:rotateY(225deg) translateZ(495px);transform:rotateY(225deg) translateZ(495px)}
+.caroussel img:nth-child(7){-webkit-transform:rotateY(270deg) translateZ(495px);transform:rotateY(270deg) translateZ(495px)}
+.caroussel img:nth-child(8){-webkit-transform:rotateY(315deg) translateZ(495px);transform:rotateY(315deg) translateZ(495px)}
+
+@keyframes rotation{
+from{transform:rotatey(0)}
+to{transform:rotatey(1turn)}}
+
+@-webkit-keyframes rotation{
+from{-webkit-transform:rotatey(0)}
+to{-webkit-transform:rotatey(1turn)}}
+/*****fin carrousel 3d automatique*****/
+
+/*Galerie2*/
+.gallery li
+{
+  display:inline-block;
+  min-height: 170px;
+  vertical-align:top;
+  text-align:center;
+  padding:4px;
+  zoom:1;
+  display: inline;
+  border:none;
+}
+
+/*Pied*/
+html, body {
+  height: 100%; /*fait en sorte que la page occupe tout l'espace*/
+  }
+  
+  * {
+  margin: 0; /*les marges pourraient tout gâcher*/
+  }
+  
+  #contenuprincipal {
+  height: 12%; /*pousse le pied de page vers le bas*/
+  }
+  
+  #pieddepage {
+    height: 50px; /*pour ajuster l'hauteur du pied de page*/
+    margin-top: -50px;/*ces chiffres doivent être opposés*/
+  }
+
+  /*Titre*/
+  .texte{
+    /* Mieux vaut centrer le texte dans un
+       cercle. */
+    text-align : center;
+  
+    /* On fait attention à ce que le texte
+       ne touche pas la bordure. On placera
+       donc le texte avec un remplissage, ce
+       qui donnera une meilleure impression
+       pour le cercle. */
+    padding : 1em;
+  
+    /* La bordure marquera le cercle. On
+       pourrait également utiliser un arrière-
+       plan car celui-ci aurait été contenu 
+       par border-radius */
+    border : 0.5em solid rgb(127, 127, 131);
+  
+    /* Assurons-nous que la boîte soit carrée
+       pour obtenir un cercle bien rond plutôt
+       qu'une ellipse ;) */
+    width  : 5em;
+    height : 1em;
+  
+    /* Enfin, transformons le carré en cercle */
+    border-radius: 100%;
+    font-weight : bold;  
+      color: white;
+      color: yellow;
+  }
+  .Centre{
+      text-align : center;
+      color : white;
+      font-weight : bold; 
+
+  }
+  .CENTRE{
+    text-align : center;
+    color : black;
+  }
+  .Centres{
+    text-align : center;
+    color : rgb(248, 6, 6);
+  }
+  .Gras{font-weight: bold;} 
+  .Souligné{text-decoration:underline;}
+  .Italic{font-style:italic;}  
+
+  .Gras2{
+    font-weight: bold;
+    color : rgb(245, 17, 17);} 
+
+  .Milieu{
+   text-align : center;
+
+  }
+
+  label{
+    display: block;
+    width: 150px;
+    float: left;
+  }
